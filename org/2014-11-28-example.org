@@ -1,0 +1,8 @@
+#+TITLE: Example
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_PUBLISHED: true
+
+* Example
+
+
+  # {{{more}}}

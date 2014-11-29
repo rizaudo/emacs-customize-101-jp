@@ -7,11 +7,36 @@ Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ
 そのうち作る
 
 * Usage
-- beware ::
+- 用意 ::
+Emacs + Org-mode (.org編集出来るなら他のでも良いはずだけど、そんな物あ
+るのか？)
 #+BEGIN_SRC
-M-x package-install org-jekyll
+M-x package-install org-octopress
 #+END_SRC
+等で、パッケージを入れた後に
+#+BEGIN_SRC
+(setq org-publish-project-alist '(("org-customize"
+         ;; Path to your org files.
+         :base-directory "~/project/emacs-customize-101-jp/org/"
+         :base-extension "org"
+         
+         ;; Path to your Jekyll project.
+         :publishing-directory "~/project/emacs-customize-101-jp/_posts/"
+         :recursive t
+         :publishing-function org-jekyll-publish-to-html
+         :headline-levels 4 
+         :html-extension "html"
+         :body-only t ;; Only export section between <body> </body>
+         )))
+#+END_SRC
+をどっかでEval。
+これはOrgでPublishするための設定です。
 - 書いた後のテスト ::
+#+BEGIN_SRC
+C-c e P x org-customize
+#+END_SRC
+とすると、./org内の物が./_postsにhtmlで出力されます。
+その後に
 #+BEGIN_SRC
 jekyll serve
 #+END_SRC
