@@ -7,6 +7,14 @@ Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ
 そのうち作る
 
 * Usage
+- beware ::
 #+BEGIN_SRC
 M-x package-install org-jekyll
 #+END_SRC
+- 書いた後のテスト ::
+#+BEGIN_SRC
+jekyll serve
+#+END_SRC
+した後に、localhost:4000に接続。
+* 作成者
+今の所@rizaudo
