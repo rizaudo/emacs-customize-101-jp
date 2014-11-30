@@ -1,0 +1,36 @@
+#+TITLE: Quickstart
+#+DATE: 2014-11-30
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: quickstart
+#+JEKYLL_PUBLISHED: true
+
+* Emacs4 Battery include
+  Emacsの設定作業が面倒という人の為に、適当に良さそうな物を見繕ってみま
+  す。
+
+** Emacs Prelude
+   [[https://github.com/bbatsov/prelude][EmacsPrelude]] はデフォルトのEmacs体験を拡張する事を狙いとして作られ
+   たEmacsディストリビューションとされています。[fn:1]
+   以下のように入れられます。[fn:1]
+   - Curlを使った方法 ::
+   #+BEGIN_SRC 
+   curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+   #+END_SRC
+   - Wgetを使った方法 ::
+   #+BEGIN_SRC 
+   wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+   #+END_SRC
+   - Gitを使った方法 ::
+   #+BEGIN_SRC 
+   git clone git://github.com/bbatsov/prelude.git path/to/local/repo
+   ln -s path/to/local/repo ~/.emacs.d
+   cd ~/.emacs.d
+   #+END_SRC
+
+   *そのうち残りをかく*
+
+** Emacs-live
+   
+
+[fn:1] 公式のREADMEより
+
