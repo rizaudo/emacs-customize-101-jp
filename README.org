@@ -75,6 +75,6 @@ C-c C-e P p RET
 #+BEGIN_SRC
 jekyll serve
 #+END_SRC
-して、localhost:4000/emacs-customize-101-jp/に接続。
+した後に、localhost:4000/emacs-customize-101-jp/に接続。
 * 作成者
 今の所@rizaudo
