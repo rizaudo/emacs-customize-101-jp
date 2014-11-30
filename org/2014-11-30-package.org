@@ -1,0 +1,23 @@
+#+TITLE: カスタマイズに使えるパッケージ
+#+DATE: 2014-11-30
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: package
+#+JEKYLL_PUBLISHED: true
+
+* TL;DR
+  パッケージについて紹介していますが、めんどくさかったらStarter-kitを
+  入れましょう。大体の設定はしてくれますし、それ以上の挙動はinit.elで
+  書けば良いだけになります。
+
+* 推奨パッケージ
+  Emacsは環境であると言われるように、Emacsでは入れる拡張(パッケージ)によっ
+  てかなり使い勝手に差が出ます。 この記事ではEmacsで使うと良いであろうパッ
+  ケージについて紹介します。
+** Smex
+   Emacs使い初めだとまずコマンド覚えてないので標準のM-xは使いにくいです。
+   SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないならまず使うと良いパッケージです。
+   
+** ido
+   InteractivelyDoThingsの略で、Emacsの標準機能です。
+   対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使いやすくなります。
+   恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
