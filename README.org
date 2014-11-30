@@ -4,14 +4,14 @@
 
 * 何じゃこれ
 Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ。
-そのうち作る
+作り始めている
 
-* Usage
+* 記事の書き方
 - 用意 ::
 Emacs + Org-mode (.org編集出来るなら他のでも良いはずだけど、そんな物あ
 るのか？)
 #+BEGIN_SRC
-M-x package-install org-octopress
+M-x package-install org-octopress RET
 #+END_SRC
 等で、パッケージを入れた後に
 #+BEGIN_SRC
@@ -26,14 +26,21 @@ M-x package-install org-octopress
          :publishing-function org-jekyll-publish-to-html
          :headline-levels 4 
          :html-extension "html"
-         :body-only t ;; Only export section between <body> </body>
          )))
 #+END_SRC
 をどっかでEval。
 これはOrgでPublishするための設定です。
+- 記事の書き方 ::
+org/の中に、* YYYY-MM-DD-NAME.org *という名前でファイルを作成してくださ
+い。
+以下のコマンドでテンプレートを作成して、記事を書いてください。
+#+BEGIN_SRC
+M-x org-jekyll-insert-export-options-template RET
+#+END_SRC
+
 - 書いた後のテスト ::
 #+BEGIN_SRC
-C-c e P x org-customize
+C-c C-e P x org-customize RET
 #+END_SRC
 とすると、./org内の物が./_postsにhtmlで出力されます。
 その後に
