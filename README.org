@@ -30,6 +30,12 @@ M-x package-install org-octopress RET
 #+END_SRC
 をどっかでEval。
 これはOrgでPublishするための設定です。
+
+jekyllなどのインストールは以下の通り
+#+BEGIN_SRC 
+cd ~/path/to/emacs-customize-101-jp/
+bundle install
+#+END_SRC
 - 記事の書き方 ::
 org/の中に、* YYYY-MM-DD-NAME.org *という名前でファイルを作成してくださ
 い。
