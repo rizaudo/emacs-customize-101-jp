@@ -10,10 +10,12 @@ comments:
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Emacs4 Battery include</a>
+<li><a href="#sec-1">1. Emacsスターターキット</a>
 <ul>
 <li><a href="#sec-1-1">1.1. Emacs Prelude</a></li>
-<li><a href="#sec-1-2">1.2. Emacs-live</a></li>
+<li><a href="#sec-1-2">1.2. Spacemacs</a></li>
+<li><a href="#sec-1-3">1.3. Emacs-live</a></li>
+<li><a href="#sec-1-4">1.4. oh-my-emacs</a></li>
 </ul>
 </li>
 </ul>
@@ -21,24 +23,27 @@ comments:
 </div>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Emacs4 Battery include</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Emacsスターターキット</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Emacsの設定作業が面倒という人の為に、適当に良さそうな物を見繕ってみま
-す。
+Emacsを余り使わないため、設定の労は最小限に抑えたいという方にこの節
+ではスターターキットを紹介したいと思います。
 </p>
 </div>
-
 <div id="outline-container-sec-1-1" class="outline-3">
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> Emacs Prelude</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="https://github.com/bbatsov/prelude">EmacsPrelude</a> はデフォルトのEmacs体験を拡張する事を狙いとして作られ
 たEmacsディストリビューションとされています。<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>
+ディストリビューションと名乗るだけあって、内容は非常に多岐にわたりま
+す。詳細はGithubのREADMEを読むとよいのですが、様々な独自キーバインドを
+追加していて独特な物となっています。使ってみたら気に入らなくても、カ
+スタマイズの参考にはなるかと思います。
 以下のように入れられます。<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup>
 </p>
 <dl class="org-dl">
-<dt> Curlを使った方法 </dt><dd></dd>
+<dt> cURLを使った方法 </dt><dd></dd>
 </dl>
 <pre class="example">
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
@@ -57,16 +62,42 @@ git clone git://github.com/bbatsov/prelude.git path/to/local/repo
 ln -s path/to/local/repo ~/.emacs.d
 cd ~/.emacs.d
 </pre>
-
-<p>
-<b>そのうち残りをかく</b>
-</p>
 </div>
 </div>
 
 <div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Emacs-live</h3>
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Spacemacs</h3>
 <div class="outline-text-3" id="text-1-2">
+<p>
+<a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a> は、EvilというEmacs上でVimライクなエディタを実現する拡張
+を主軸とした、発展キットです。
+<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>
+Spacemacsは公式にあるスクリーンショットなどを見るとわかるように、
+操作はEvilが中心となっているだけあって、Vimライクな操作になっている
+ためVimから移って来た人だと直ぐに使えると思われます。
+入れ方は以下の通りです。
+</p>
+<pre class="example">
+git clone --recursive http://github.com/syl20bnr/spacemacs ~/.emacs.d
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Emacs-live</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+<b>現在Emacs-liveの内容はありません</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> oh-my-emacs</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+<b>現在oh-my-emacsの内容はありません</b>
+</p>
 </div>
 </div>
 </div>
@@ -77,6 +108,8 @@ cd ~/.emacs.d
 <div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
 公式のREADMEより
 </p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>公式のREADME.mdより</p></div>
 
 
 </div>
