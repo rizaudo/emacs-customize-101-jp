@@ -1,8 +1,14 @@
 #+TITLE: Example
+#+DATE: 2014-11-28
 #+JEKYLL_LAYOUT: post
-#+JEKYLL_PUBLISHED: true
+#+JEKYLL_CATEGORIES: example
+#+jekyll_PUBLISHED: true
 
 * Example
-
+  orgでは新しい行で<sと入力して、TABを押すと
+  #+BEGIN_SRC 
+  #+BEGIN_SRC ~ #+END_SRC
+  #+END_SRC
+  が入力出来ます。
 
   # {{{more}}}
