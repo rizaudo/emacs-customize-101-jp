@@ -4,7 +4,7 @@
 
 * 何じゃこれ
 Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ。
-作り始めている
+-jpとなっていますが、別に元の何かがある訳ではありません。
 
 * 記事の書き方
 - 用意 ::
@@ -15,7 +15,7 @@ M-x package-install org-octopress RET
 #+END_SRC
 等で、パッケージを入れた後に
 #+BEGIN_SRC
-(setq org-publish-project-alist '(("org-customize"
+(setq org-publish-project-alist '(("emacs-customize-101-jp"
          ;; Path to your org files.
          :base-directory "~/project/emacs-customize-101-jp/org/"
          :base-extension "org"
@@ -37,7 +37,7 @@ cd ~/path/to/emacs-customize-101-jp/
 bundle install
 #+END_SRC
 - 記事の書き方 ::
-org/の中に、* YYYY-MM-DD-NAME.org *という名前でファイルを作成してくださ
+org/の中に、*YYYY-MM-DD-NAME.org*という名前でファイルを作成してくださ
 い。
 以下のコマンドでテンプレートを作成して、記事を書いてください。
 #+BEGIN_SRC
@@ -45,14 +45,15 @@ M-x org-jekyll-insert-export-options-template RET
 #+END_SRC
 
 - 書いた後のテスト ::
+org内の記事を作成している場合、
 #+BEGIN_SRC
-C-c C-e P x org-customize RET
+C-c C-e P p RET
 #+END_SRC
 とすると、./org内の物が./_postsにhtmlで出力されます。
 その後に
 #+BEGIN_SRC
 jekyll serve
 #+END_SRC
-した後に、localhost:4000/emacs-customize-101-jp/に接続。
+して、localhost:4000/emacs-customize-101-jp/に接続。
 * 作成者
 今の所@rizaudo
