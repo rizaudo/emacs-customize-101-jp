@@ -3,11 +3,12 @@
 #+JEKYLL_LAYOUT: post
 #+JEKYLL_CATEGORIES: package
 #+JEKYLL_PUBLISHED: true
+#+STARTUP: indent
 
 * TL;DR
-  パッケージについて紹介していますが、めんどくさかったらStarter-kitを
-  入れましょう。大体の設定はしてくれますし、それ以上の挙動はinit.elで
-  書けば良いだけになります。
+  パッケージについて紹介していますが、めんどくさかったらquickstartを見
+  てスターターキットを入れましょう。大体の設定はしてくれますし、それ以
+  上の挙動はinit.elで書けば良いだけになります。
 
 * 推奨パッケージ
   Emacsは環境であると言われるように、Emacsでは入れる拡張(パッケージ)によっ
