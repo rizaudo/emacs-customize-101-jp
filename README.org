@@ -8,13 +8,15 @@ Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ
 
 * 記事の書き方
 - 用意 ::
-Emacs + Org-mode (.org編集出来るなら他のでも良いはずだけど、そんな物あ
-るのか？)
+Emacs + Org-mode + org-octopress (.org編集出来るなら他のでも良いはずで
+す)
 #+BEGIN_SRC
 M-x package-install org-octopress RET
 #+END_SRC
 等で、パッケージを入れた後に
 #+BEGIN_SRC
+(req ox-publish)
+(req ox-jekyll)
 (setq org-publish-project-alist '(("emacs-customize-101-jp"
          ;; Path to your org files.
          :base-directory "~/project/emacs-customize-101-jp/org/"
