@@ -3,20 +3,21 @@
 #+JEKYLL_LAYOUT: post
 #+JEKYLL_CATEGORIES: quickstart
 #+JEKYLL_PUBLISHED: true
+#+STARTUP: indent
 
 * Emacsスターターキット
-  Emacsを余り使わないため、設定の労は最小限に抑えたいという方にこの節
-  ではスターターキットを紹介したいと思います。
-  # ちょっとスターターキットという言い方は変えたい。何か良い表現は無い
-  # かな？
+Emacsを余り使わないため、設定の労は最小限に抑えたいという方にこの節
+ではスターターキット以上ディストリビューション未満な物たちを紹介したいと思います。
+# ちょっとスターターキットという言い方は変えたい。何か良い表現は無い
+# かな？
 ** Emacs Prelude
-   [[https://github.com/bbatsov/prelude][EmacsPrelude]] はデフォルトのEmacs体験を拡張する事を狙いとして作られ
-   たEmacsディストリビューションとされています。[fn:1]
-   ディストリビューションと名乗るだけあって、内容は非常に多岐にわたりま
-   す。詳細はGithubのREADMEを読むとよいのですが、様々な独自キーバインドを
-   追加していて独特な物となっています。使ってみたら気に入らなくても、カ
-   スタマイズの参考にはなるかと思います。
-   以下のように入れられます。[fn:1]
+[[https://github.com/bbatsov/prelude][EmacsPrelude]] はデフォルトのEmacs体験を拡張する事を狙いとして作られ
+たEmacsディストリビューションとされています。[fn:1]
+ディストリビューションと名乗るだけあって、内容は非常に多岐にわたりま
+す。詳細はGithubのREADMEを読むとよいのですが、様々な独自キーバインドを
+追加していて独特な物となっています。使ってみたら気に入らなくても、カ
+スタマイズの参考にはなるかと思います。
+以下のように入れられます。[fn:1]
    - cURLを使った方法 ::
    #+BEGIN_SRC 
    curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
@@ -31,24 +32,24 @@
    ln -s path/to/local/repo ~/.emacs.d
    cd ~/.emacs.d
    #+END_SRC
-
+   
 ** Spacemacs
-   [[https://github.com/syl20bnr/spacemacs][Spacemacs]] は、EvilというEmacs上でVimライクなエディタを実現する拡張
-   を主軸とした、発展キットです。
-   [fn::公式のREADME.mdより]
-   Spacemacsは公式にあるスクリーンショットなどを見るとわかるように、
-   操作はEvilが中心となっているだけあって、Vimライクな操作になっている
-   ためVimから移って来た人だと直ぐに使えると思われます。
-   入れ方は以下の通りです。
-   #+BEGIN_SRC 
+[[https://github.com/syl20bnr/spacemacs][Spacemacs]] は、EvilというEmacs上でVimライクなエディタを実現する拡張
+を主軸とした、発展キットです。
+[fn::公式のREADME.mdより]
+Spacemacsは公式にあるスクリーンショットなどを見るとわかるように、
+操作はEvilが中心となっているだけあって、Vimライクな操作になっている
+ためVimから移って来た人だと直ぐに使えると思われます。
+入れ方は以下の通りです。
+#+BEGIN_SRC 
    git clone --recursive http://github.com/syl20bnr/spacemacs ~/.emacs.d
-   #+END_SRC
+#+END_SRC
 
 ** Emacs-live
-   *現在Emacs-liveの内容はありません*
+*現在Emacs-liveの内容はありません*
 
 ** oh-my-emacs
-   *現在oh-my-emacsの内容はありません*
+*現在oh-my-emacsの内容はありません*
 
 [fn:1] 公式のREADMEより
 
