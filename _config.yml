@@ -10,3 +10,4 @@ github_username:  rizaudo
 
 # Build settings
 markdown: kramdown
+timezone: Asia/Tokyo
