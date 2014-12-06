@@ -2,9 +2,7 @@
 title: Emacs Customize 101
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  これはEmacsカスタマイズの為の情報をまとめるブログもどきです。
 baseurl: "/emacs-customize-101-jp" # the subpath of your site, e.g. /blog/
 url: "http://rizaudo.github.com/emacs-customize-101-jp" # the base hostname & protocol for your site
 twitter_username: rizaudo
