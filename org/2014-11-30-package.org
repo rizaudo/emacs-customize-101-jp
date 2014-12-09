@@ -8,15 +8,37 @@
 * TL;DR
 パッケージについて紹介していますが、めんどくさかったらquickstartを見
 てスターターキットを入れましょう。大体の設定はしてくれますし、それ以
-上の挙動はinit.elで書けば良いだけになります。
+上の挙動はinit.elに追記すれば良いだけになります。
 
 * 推奨パッケージ
 Emacsは環境であると言われるように、Emacsでは入れる拡張(パッケージ)によっ
 てかなり使い勝手に差が出ます。 この記事ではEmacsで使うと良いであろうパッ
 ケージについて紹介します。
+** Better Defaults
+一部の人にはおなじみのtechnomancy[fn::https://github.com/technomancy]
+という方が作っている、Emacsのデフォルトを少し改善するパッケージです。
+内容としてはido, uniquify, saveplaceに対してのちょっとした設定、括弧の
+対応の有効化、Menu-barなどの無効化が入っています。導入方法は以下の通りで
+す
+#+BEGIN_SRC emacs-lisp
+M-x package-install better-defaults
+#+END_SRC
+
+** Starter-kit
+Better Defaultsと同じ作者によるパッケージ、及びガイドです。推奨してお
+きながら何ですが、パッケージ版がかなり古いため、試しに使ってみて、設定
+を参考にするのに良いかと思って紹介しました。ガイドのほうは中々良いパッケー
+ジをオススメして、一見の価値がありますので、是非参考にどうぞ。導入方法は
+以下の通りです。
+#+BEGIN_SRC emacs-lisp
+M-x package-install starter-kit
+#+END_SRC
+
 ** Smex
 Emacs使い初めだとまずコマンド覚えてないので標準のM-xは使いにくいです。
-SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないならまず使うと良いパッケージです。
+SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないな
+らまず使うと良いパッケージです。
+
 
 ** ido
 InteractivelyDoThingsの略で、Emacsの標準機能です。

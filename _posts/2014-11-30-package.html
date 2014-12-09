@@ -13,8 +13,10 @@ comments:
 <li><a href="#sec-1">1. TL;DR</a></li>
 <li><a href="#sec-2">2. 推奨パッケージ</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Smex</a></li>
-<li><a href="#sec-2-2">2.2. ido</a></li>
+<li><a href="#sec-2-1">2.1. Better Defaults</a></li>
+<li><a href="#sec-2-2">2.2. Starter-kit</a></li>
+<li><a href="#sec-2-3">2.3. Smex</a></li>
+<li><a href="#sec-2-4">2.4. ido</a></li>
 </ul>
 </li>
 </ul>
@@ -25,9 +27,9 @@ comments:
 <h2 id="sec-1"><span class="section-number-2">1</span> TL;DR</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-パッケージについて紹介していますが、めんどくさかったらStarter-kitを
-入れましょう。大体の設定はしてくれますし、それ以上の挙動はinit.elで
-書けば良いだけになります。
+パッケージについて紹介していますが、めんどくさかったらquickstartを見
+てスターターキットを入れましょう。大体の設定はしてくれますし、それ以
+上の挙動はinit.elに追記すれば良いだけになります。
 </p>
 </div>
 </div>
@@ -42,23 +44,70 @@ Emacsは環境であると言われるように、Emacsでは入れる拡張(パ
 </p>
 </div>
 <div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Smex</h3>
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Better Defaults</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Emacs使い初めだとまずコマンド覚えてないので標準のM-xは使いにくいです。
-SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないならまず使うと良いパッケージです。
+一部の人にはおなじみのtechnomancy<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>
+という方が作っている、Emacsのデフォルトを少し改善するパッケージです。
+内容としてはido, uniquify, saveplaceに対してのちょっとした設定、括弧の
+対応の有効化、Menu-barなどの無効化が入っています。導入方法は以下の通りで
+す
 </p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">M-x package-install better-defaults
+</pre>
+</div>
 </div>
 </div>
 
 <div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> ido</h3>
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Starter-kit</h3>
 <div class="outline-text-3" id="text-2-2">
+<p>
+Better Defaultsと同じ作者によるパッケージ、及びガイドです。推奨してお
+きながら何ですが、パッケージ版がかなり古いため、試しに使ってみて、設定
+を参考にするのに良いかと思って紹介しました。ガイドのほうは中々良いパッケー
+ジをオススメして、一見の価値がありますので、是非参考にどうぞ。導入方法は
+以下の通りです。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">M-x package-install starter-kit
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Smex</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Emacs使い初めだとまずコマンド覚えてないので標準のM-xは使いにくいです。
+SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないな
+らまず使うと良いパッケージです。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> ido</h3>
+<div class="outline-text-3" id="text-2-4">
 <p>
 InteractivelyDoThingsの略で、Emacsの標準機能です。
 対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使いやすくなります。
 恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
 </p>
 </div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p><a href="https://github.com/technomancy">https://github.com/technomancy</a></p></div>
+
+
 </div>
 </div>
