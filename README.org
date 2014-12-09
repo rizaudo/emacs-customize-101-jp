@@ -51,6 +51,18 @@ org/の中に、*YYYY-MM-DD-NAME.org*という名前でファイルを作成し�
 M-x org-jekyll-insert-export-options-template RET
 #+END_SRC
 
+- 記事の中でソースコードを書く方法 ::
+大抵の言語は以下のように書けば大丈夫です。
+#+BEGIN_EXAMPLE
+#+BEGIN_SRC [lang-name]
+#+END_SRC
+#+END_EXAMPLE
+もしもJekyllがハイライトに対応していない言語の場合
+
+#+BEGIN_EXAMPLE
+#+BEGIN_EXAMPLE ~ #+END_EXAMPLE
+#+END_EXAMPLE
+と入れて、とりあえずブロック化してください。
 - 書いた後のテスト ::
 org内の記事を作成している場合、
 #+BEGIN_SRC
