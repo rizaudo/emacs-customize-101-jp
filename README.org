@@ -1,4 +1,5 @@
 #+TITLE: README
+#+STARTUP: indent
 
 えるしっているか、GithubはREADMEをorgで書ける。
 
@@ -14,7 +15,10 @@ Emacs + Org-mode + org-octopress (.org編集出来るなら他のでも良いは
 M-x package-install org-octopress RET
 #+END_SRC
 等で、パッケージを入れた後に
-#+BEGIN_SRC
+#+BEGIN_SRC shell
+git clone https://github.com/rizaudo/emacs-customize-101-jp.git
+#+END_SRC
+#+BEGIN_SRC emacs-lisp
 (req ox-publish)
 (req ox-jekyll)
 (setq org-publish-project-alist '(("emacs-customize-101-jp"
@@ -30,7 +34,8 @@ M-x package-install org-octopress RET
          :html-extension "html"
          )))
 #+END_SRC
-をどっかでEval。
+をどっかでEval。ちなみにEmacsでこのファイルを開いている場合、SRCブロッ
+クでC-c C-cと打つとEvalされます。
 これはOrgでPublishするための設定です。
 
 jekyllなどのインストールは以下の通り
