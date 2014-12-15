@@ -1,10 +1,14 @@
-#+TITLE: Example
+#+TITLE: 記事のサンプル
 #+DATE: 2014-11-28
 #+JEKYLL_LAYOUT: post
 #+JEKYLL_CATEGORIES: example
 #+jekyll_PUBLISHED: true
 
-* Example
+* 記事の書き方とかExample
+大体[[http://orgmode.jp/doc-ja/org-ja.html][Orgの日本語ドキュメント]] の2章を読んで下の所を読めば特に問題は無い
+と思います。
+** 構造
+   orgではドキュメントの構造を手軽に編集出来るようにしています。
   orgでは新しい行で<sと入力して、TABを押すと
   #+BEGIN_EXAMPLE
   #+BEGIN_SRC ~ #+END_SRC
