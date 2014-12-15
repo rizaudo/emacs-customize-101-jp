@@ -28,7 +28,6 @@ git clone https://github.com/rizaudo/emacs-customize-101-jp.git
          ;; Path to your org files.
          :base-directory "~/project/emacs-customize-101-jp/org/"
          :base-extension "org"
-         
          ;; Path to your Jekyll project.
          :publishing-directory "~/project/emacs-customize-101-jp/_posts/"
          :recursive t
@@ -57,8 +56,8 @@ M-x org-jekyll-insert-export-options-template RET
 - 記事の中でソースコードを書く方法 ::
 大抵の言語は以下のように書けば大丈夫です。
 #+BEGIN_EXAMPLE
-#+BEGIN_SRC [lang-name]
-#+END_SRC
+:#+BEGIN_SRC [lang-name]:
+:#+END_SRC:
 #+END_EXAMPLE
 もしもJekyllがハイライトに対応していない言語の場合
 
