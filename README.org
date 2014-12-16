@@ -55,14 +55,15 @@ M-x org-jekyll-insert-export-options-template RET
 
 - 記事の中でソースコードを書く方法 ::
 大抵の言語は以下のように書けば大丈夫です。
+*.はGitHub Flavored対策なので無視してください*
 #+BEGIN_EXAMPLE
-:#+BEGIN_SRC [lang-name]:
-:#+END_SRC:
+.#+BEGIN_SRC [lang-name]
+.#+END_SRC
 #+END_EXAMPLE
 もしもJekyllがハイライトに対応していない言語の場合
 
 #+BEGIN_EXAMPLE
-#+BEGIN_EXAMPLE ~ #+END_EXAMPLE
+.#+BEGIN_EXAMPLE ~#+END_EXAMPLE
 #+END_EXAMPLE
 と入れて、とりあえずブロック化してください。
 - 書いた後のテスト ::
