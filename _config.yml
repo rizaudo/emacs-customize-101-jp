@@ -2,7 +2,7 @@
 title: Emacs Customize 101
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  これはEmacsカスタマイズの為の情報をまとめるブログもどきです。
+  エディタ戦争に疲れた人間が、ただEmacsの情報を載せていく所です。
 baseurl: "/emacs-customize-101-jp" # the subpath of your site, e.g. /blog/
 url: "http://rizaudo.github.com/emacs-customize-101-jp" # the base hostname & protocol for your site
 twitter_username: rizaudo
