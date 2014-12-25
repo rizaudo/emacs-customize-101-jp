@@ -5,6 +5,7 @@
 #+JEKYLL_PUBLISHED: true
 #+STARTUP: indent
 
+# 結構大きくなった紹介とかは、別ページに飛ばすようにします。
 * TL;DR
 パッケージについて紹介していますが、めんどくさかったらquickstartを見
 てスターターキットを入れましょう。大体の設定はしてくれますし、それ以
@@ -12,7 +13,7 @@
 
 * 推奨パッケージ
 Emacsは環境であると言われるように、Emacsでは入れる拡張(パッケージ)によっ
-てかなり使い勝手に差が出ます。 この記事ではEmacsで使うと良いであろうパッ
+てかなり使い勝手に差が出ます(改善する物ですから当たり前ですね)。 この記事ではEmacsで使うと良いであろうパッ
 ケージについて紹介します。
 ** Better Defaults
 一部の人にはおなじみのtechnomancy[fn::https://github.com/technomancy]
@@ -44,3 +45,10 @@ SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使�
 InteractivelyDoThingsの略で、Emacsの標準機能です。
 対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使いやすくなります。
 恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
+** helm/anything
+[書く予定ですが、筆者は良く知らないので難航しています]
+
+** Autocomplete
+良く知られている、自動補完パッケージです。
+そのうち書くので、今はこの辺りを読んでみてください
+([[http://cx4a.org/software/auto-complete/manual.ja.html][日本語マニュアル]])。
