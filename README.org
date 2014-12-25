@@ -3,14 +3,14 @@
 
 えるしっているか、GithubはREADMEをorgで書ける。
 
-* 何じゃこれ
+* 何これ
 Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ。
--jpとなっていますが、別に元の何かがある訳ではありません。
+jpとなっていますが、別に元の何かがある訳ではありません。
 もしもこんな物を見つけたというレアな人が居たら、何か書いてほしいパッケー
 ジがあればissueか@rizaudoに何か投げると書くと思います。
 * 記事の書き方
-org使うのが面倒になったり、org勉強する程じゃないけど記事書くという人
-(いるのか？)はpandocか何かでorgに変換したのを@rizaudoに送ってください。
+org使うのが面倒になったり、org勉強する程じゃないけど記事書く意欲があるという人
+(いるのか？)は@rizaudoに送ってください。変換作業をします。
 - 用意 ::
 Emacs + Org-mode + org-octopress (.org編集出来るなら他のでも良いはずで
 す)
@@ -61,7 +61,6 @@ M-x org-jekyll-insert-export-options-template RET
 .#+END_SRC
 #+END_EXAMPLE
 もしもJekyllがハイライトに対応していない言語の場合
-
 #+BEGIN_EXAMPLE
 .#+BEGIN_EXAMPLE ~#+END_EXAMPLE
 #+END_EXAMPLE
