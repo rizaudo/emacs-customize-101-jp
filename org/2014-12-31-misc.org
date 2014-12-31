@@ -1,0 +1,24 @@
+#+TITLE: misc
+#+DATE: 2014-12-31
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: misc
+#+JEKYLL_PUBLISHED: true
+
+この辺りはよく解らないパッケージ情報を載せています。
+
+* 有用っぽいの
+** 飯
+*** food-dice
+飯を決めるのがめんどくさい人に。サイコロ飯が出来ます。
+候補を入れるだけで、何か適当に出してくれます。
+#+BEGIN_SRC 
+(setq fooddice/meals '(pizza pommes burger noodles bread soup chinese sushi))
+(setq fooddice/drinks '(cola water coffee tea beer whisky milk cacao icetea energydrink))
+(setq fooddice/restaurants '(italian chinese thai american japanese))
+#+END_SRC
+#+BEGIN_SRC 
+M-x what-to-eat
+M-x where-to-eat
+M-x what-to-drink
+#+END_SRC
+
