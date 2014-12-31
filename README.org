@@ -1,8 +1,6 @@
 #+TITLE: README
 #+STARTUP: indent
 
-えるしっているか、GithubはREADMEをorgで書ける。
-
 * 何これ
 Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ。
 jpとなっていますが、別に元の何かがある訳ではありません。
