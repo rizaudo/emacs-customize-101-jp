@@ -1,0 +1,4 @@
+#+OPTIONS: toc:nil num:nil
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_PUBLISHED: true
+#+STARTUP: indent
