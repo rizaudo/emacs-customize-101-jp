@@ -10,21 +10,26 @@ comments:
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 有用？</a>
+<li><a href="#sec-1">有用？</a>
 <ul>
 <li>
 <ul>
-<li><a href="#sec-1-0-1">1.0.1. food-dice</a></li>
+<li><a href="#sec-1-0-1">food-dice</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-2">2. ゲーム</a>
+<li><a href="#sec-2">ゲーム</a>
 <ul>
 <li>
 <ul>
-<li><a href="#sec-2-0-1">2.0.1. Dunnet</a></li>
-<li><a href="#sec-2-0-2">2.0.2. gomoku</a></li>
+<li><a href="#sec-2-0-1">tetris</a></li>
+<li><a href="#sec-2-0-2">mpuz</a></li>
+<li><a href="#sec-2-0-3">blackbox</a></li>
+<li><a href="#sec-2-0-4">snake</a></li>
+<li><a href="#sec-2-0-5">Dunnet</a></li>
+<li><a href="#sec-2-0-6">gomoku</a></li>
+<li><a href="#sec-2-0-7">honoi</a></li>
 </ul>
 </li>
 </ul>
@@ -37,10 +42,10 @@ comments:
 </p>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 有用？</h2>
+<h2 id="sec-1">有用？</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-0-1" class="outline-4">
-<h4 id="sec-1-0-1"><span class="section-number-4">1.0.1</span> food-dice</h4>
+<h4 id="sec-1-0-1">food-dice</h4>
 <div class="outline-text-4" id="text-1-0-1">
 <p>
 飯を決めるのがめんどくさい人に。サイコロ飯が出来ます。
@@ -62,11 +67,65 @@ M-x what-to-drink
 
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> ゲーム</h2>
+<h2 id="sec-2">ゲーム</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-sec-2-0-1" class="outline-4">
-<h4 id="sec-2-0-1"><span class="section-number-4">2.0.1</span> Dunnet</h4>
+<h4 id="sec-2-0-1">tetris</h4>
 <div class="outline-text-4" id="text-2-0-1">
+<p>
+テトリスです。説明が必要ないでしょう。
+</p>
+<pre class="example">
+M-x tetris
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-2" class="outline-4">
+<h4 id="sec-2-0-2">mpuz</h4>
+<div class="outline-text-4" id="text-2-0-2">
+<p>
+覆面算が好きですか？
+</p>
+<pre class="example">
+M-x mpuz
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-3" class="outline-4">
+<h4 id="sec-2-0-3">blackbox</h4>
+<div class="outline-text-4" id="text-2-0-3">
+<p>
+ブラックボックスの外側からX線を発射して、中にある玉の場所を当てるゲームです。
+SPCでX線の発射か玉のフラグを立てる事が出来ます。
+簡単な記号の説明
+</p>
+<ul class="org-ul">
+<li>[数字] 発射したX線が同じ数字の所から出た
+</li>
+<li>[H] 玉にX線が当たった
+</li>
+<li>[R] 発射した所にX線が戻って来た
+</li>
+</ul>
+<pre class="example">
+M-x blackbox
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-4" class="outline-4">
+<h4 id="sec-2-0-4">snake</h4>
+<div class="outline-text-4" id="text-2-0-4">
+<p>
+色んなサンプルゲームとかでおなじみのスネークゲーム。
+</p>
+<pre class="example">
+M-x snake
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-5" class="outline-4">
+<h4 id="sec-2-0-5">Dunnet</h4>
+<div class="outline-text-4" id="text-2-0-5">
 <p>
 昔のテキストアドベンチャーゲーム。
 コマンドを自分で打って探して進めて行くタイプのです。
@@ -77,15 +136,27 @@ M-x dunnet
 </pre>
 </div>
 </div>
-<div id="outline-container-sec-2-0-2" class="outline-4">
-<h4 id="sec-2-0-2"><span class="section-number-4">2.0.2</span> gomoku</h4>
-<div class="outline-text-4" id="text-2-0-2">
+<div id="outline-container-sec-2-0-6" class="outline-4">
+<h4 id="sec-2-0-6">gomoku</h4>
+<div class="outline-text-4" id="text-2-0-6">
 <p>
 五目並べ。とても強いです。
 罵ってくるので余裕のある時に。
 </p>
 <pre class="example">
 M-x gomoku
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-7" class="outline-4">
+<h4 id="sec-2-0-7">honoi</h4>
+<div class="outline-text-4" id="text-2-0-7">
+<p>
+ハノイの塔です。
+C-u で欲しい数を渡せます。
+</p>
+<pre class="example">
+M-x hanoi
 </pre>
 </div>
 </div>
