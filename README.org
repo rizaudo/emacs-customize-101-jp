@@ -1,6 +1,8 @@
 #+TITLE: README
 #+STARTUP: indent
 
+http://rizaudo.github.io/emacs-customize-101-jp/
+
 * 何これ
 Emacsカスタマイズの為の情報を載せた、github pagesを作るやつ。
 jpとなっていますが、別に元の何かがある訳ではありません。
