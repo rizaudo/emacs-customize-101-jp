@@ -10,27 +10,25 @@
 *** food-dice
 飯を決めるのがめんどくさい人に。サイコロ飯が出来ます。
 候補を入れるだけで、何か適当に出してくれます。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 (setq fooddice/meals '(pizza pommes burger noodles bread soup chinese sushi))
 (setq fooddice/drinks '(cola water coffee tea beer whisky milk cacao icetea energydrink))
 (setq fooddice/restaurants '(italian chinese thai american japanese))
 #+END_SRC
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x what-to-eat
 M-x where-to-eat
 M-x what-to-drink
 #+END_SRC
-
-
 * ゲーム
 *** tetris
 テトリスです。説明が必要ないでしょう。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x tetris
 #+END_SRC
 *** mpuz
 覆面算が好きですか？
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x mpuz
 #+END_SRC
 *** blackbox
@@ -40,31 +38,30 @@ SPCでX線の発射か玉のフラグを立てる事が出来ます。
  - [数字] 発射したX線が同じ数字の所から出た
  - [H] 玉にX線が当たった
  - [R] 発射した所にX線が戻って来た
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x blackbox
 #+END_SRC
 *** snake
 色んなサンプルゲームとかでおなじみのスネークゲーム。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x snake
 #+END_SRC
 *** Dunnet
 昔のテキストアドベンチャーゲーム。
 コマンドを自分で打って探して進めて行くタイプのです。
 暇つぶしと英単語力を試すのに良いかも。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x dunnet
 #+END_SRC
 *** gomoku
 五目並べ。とても強いです。
 罵ってくるので余裕のある時に。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x gomoku
 #+END_SRC
 *** honoi
 ハノイの塔です。
 C-u で欲しい数を渡せます。
-#+BEGIN_SRC 
+#+BEGIN_SRC
 M-x hanoi
 #+END_SRC
-
