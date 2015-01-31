@@ -35,20 +35,28 @@ Better Defaultsと同じ作者によるパッケージ、及びガイドです�
 M-x package-install starter-kit
 #+END_SRC
 
+** ido
+InteractivelyDoThingsの略で、Emacsの標準機能です。
+対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使
+いやすくなります。
+恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
+
 ** Smex
 Emacs使い初めだとまずコマンド覚えてないので標準のM-xは使いにくいです。
 SmexはM-xをido-modeのようにするパッケージで、helm/anythingを使わないな
 らまず使うと良いパッケージです。
 
-
-** ido
-InteractivelyDoThingsの略で、Emacsの標準機能です。
-対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使いやすくなります。
-恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
 ** helm/anything
 [書く予定ですが、筆者は良く知らないので難航しています]
 
-** Autocomplete
+** 自動補完
+*** Autocomplete
 良く知られている、自動補完パッケージです。
 そのうち書くので、今はこの辺りを読んでみてください
 ([[http://cx4a.org/software/auto-complete/manual.ja.html][日本語マニュアル]])。
+
+*** Company
+Autocompleteと同じような自動補完パッケージです。
+Autocompleteよりも昔からあったようなので、古いパッケージではCompanyし
+か対応していないものもあります
+
