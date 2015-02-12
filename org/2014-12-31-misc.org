@@ -5,9 +5,10 @@
 #+OPTIONS: toc:t
 
 この辺りはよく解らないパッケージ情報を載せています。
+特に書いてなければEmacs標準のパッケージです。
 
 * 有用？
-*** food-dice
+*** food-dice(marmaladeパッケージ)
 飯を決めるのがめんどくさい人に。サイコロ飯が出来ます。
 候補を入れるだけで、何か適当に出してくれます。
 #+BEGIN_SRC
@@ -20,6 +21,10 @@ M-x what-to-eat
 M-x where-to-eat
 M-x what-to-drink
 #+END_SRC
+*** decipher
+暗号解読のお供に。
+*** dissociated-press
+四散新聞というテキストを入れて別のテキストを得るアルゴリズムを実装したコマンドです。
 * ゲーム
 *** tetris
 テトリスです。説明が必要ないでしょう。
@@ -65,3 +70,24 @@ C-u で欲しい数を渡せます。
 #+BEGIN_SRC
 M-x hanoi
 #+END_SRC
+*** bubbles
+どれだけ少ない回数でバブルを消せるかというゲームです。
+やってみると大体わかります。
+*** life
+お馴染みライフゲームです。
+*** landmark
+???
+*** morse-region
+モールス信号に変更してくれます。
+以下で複合化です。
+#+BEGIN_SRC emacs-lisp
+M-x unmorse-region
+#+END_SRC
+*** pong
+これ一人で出来ない...
+*** zone
+Emacsをidle状態にしているときに使うと良いですね。
+*** animate
+文字をアニメーションするためのパッケージです。
+*** 5x5
+ライツアウトというゲームの逆版です。全てを白で埋めたら勝ち。

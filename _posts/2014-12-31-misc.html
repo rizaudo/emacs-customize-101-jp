@@ -14,7 +14,9 @@ comments:
 <ul>
 <li>
 <ul>
-<li><a href="#sec-1-0-1">food-dice</a></li>
+<li><a href="#sec-1-0-1">food-dice(marmaladeパッケージ)</a></li>
+<li><a href="#sec-1-0-2">decipher</a></li>
+<li><a href="#sec-1-0-3">dissociated-press</a></li>
 </ul>
 </li>
 </ul>
@@ -30,6 +32,14 @@ comments:
 <li><a href="#sec-2-0-5">Dunnet</a></li>
 <li><a href="#sec-2-0-6">gomoku</a></li>
 <li><a href="#sec-2-0-7">honoi</a></li>
+<li><a href="#sec-2-0-8">bubbles</a></li>
+<li><a href="#sec-2-0-9">life</a></li>
+<li><a href="#sec-2-0-10">landmark</a></li>
+<li><a href="#sec-2-0-11">morse-region</a></li>
+<li><a href="#sec-2-0-12">pong</a></li>
+<li><a href="#sec-2-0-13">zone</a></li>
+<li><a href="#sec-2-0-14">animate</a></li>
+<li><a href="#sec-2-0-15">5x5</a></li>
 </ul>
 </li>
 </ul>
@@ -39,13 +49,14 @@ comments:
 </div>
 <p>
 この辺りはよく解らないパッケージ情報を載せています。
+特に書いてなければEmacs標準のパッケージです。
 </p>
 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">有用？</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-0-1" class="outline-4">
-<h4 id="sec-1-0-1">food-dice</h4>
+<h4 id="sec-1-0-1">food-dice(marmaladeパッケージ)</h4>
 <div class="outline-text-4" id="text-1-0-1">
 <p>
 飯を決めるのがめんどくさい人に。サイコロ飯が出来ます。
@@ -61,6 +72,22 @@ M-x what-to-eat
 M-x where-to-eat
 M-x what-to-drink
 </pre>
+</div>
+</div>
+<div id="outline-container-sec-1-0-2" class="outline-4">
+<h4 id="sec-1-0-2">decipher</h4>
+<div class="outline-text-4" id="text-1-0-2">
+<p>
+暗号解読のお供に。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-0-3" class="outline-4">
+<h4 id="sec-1-0-3">dissociated-press</h4>
+<div class="outline-text-4" id="text-1-0-3">
+<p>
+四散新聞というテキストを入れて別のテキストを得るアルゴリズムを実装したコマンドです。
+</p>
 </div>
 </div>
 </div>
@@ -156,6 +183,77 @@ C-u で欲しい数を渡せます。
 <pre class="example">
 M-x hanoi
 </pre>
+</div>
+</div>
+<div id="outline-container-sec-2-0-8" class="outline-4">
+<h4 id="sec-2-0-8">bubbles</h4>
+<div class="outline-text-4" id="text-2-0-8">
+<p>
+どれだけ少ない回数でバブルを消せるかというゲームです。
+やってみると大体わかります。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-9" class="outline-4">
+<h4 id="sec-2-0-9">life</h4>
+<div class="outline-text-4" id="text-2-0-9">
+<p>
+お馴染みライフゲームです。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-10" class="outline-4">
+<h4 id="sec-2-0-10">landmark</h4>
+<div class="outline-text-4" id="text-2-0-10">
+<p>
+???
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-11" class="outline-4">
+<h4 id="sec-2-0-11">morse-region</h4>
+<div class="outline-text-4" id="text-2-0-11">
+<p>
+モールス信号に変更してくれます。
+以下で複合化です。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">M-x unmorse-region
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-0-12" class="outline-4">
+<h4 id="sec-2-0-12">pong</h4>
+<div class="outline-text-4" id="text-2-0-12">
+<p>
+これ一人で出来ない&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-13" class="outline-4">
+<h4 id="sec-2-0-13">zone</h4>
+<div class="outline-text-4" id="text-2-0-13">
+<p>
+Emacsをidle状態にしているときに使うと良いですね。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-14" class="outline-4">
+<h4 id="sec-2-0-14">animate</h4>
+<div class="outline-text-4" id="text-2-0-14">
+<p>
+文字をアニメーションするためのパッケージです。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-0-15" class="outline-4">
+<h4 id="sec-2-0-15">5x5</h4>
+<div class="outline-text-4" id="text-2-0-15">
+<p>
+ライツアウトというゲームの逆版です。全てを白で埋めたら勝ち。
+</p>
 </div>
 </div>
 </div>
