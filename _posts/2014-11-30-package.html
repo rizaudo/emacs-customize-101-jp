@@ -95,11 +95,21 @@ Better Defaultsと同じ作者によるパッケージ、及びガイドです�
 <h3 id="sec-2-3"><span class="section-number-3">2.3</span> ido</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-InteractivelyDoThingsの略で、Emacsの標準機能です。
-対話的にうんたらと言うだけあって、find-fileやswitch-bufferが圧倒的に使
-いやすくなります。
+Ido(Interactively do)とはバッファやファイルやディレクトリなどを
+選択する動作を、単語で絞り込んでいくように変更するEmacsのデフォルトパッケージ
+です。\keys{C-s}と\keys{C-r}でカーソルの前後の移動で、
+\keys{RET}で選択の決定です。
+日本ではAnything/Helmが人気だと思われますが、海外のEmacsに関
+する情報を見る限り、海外ではIdoの方が人気であるようです。
 恐らくhelm/anythingを使わないというなら、まず使う事になると思われます。
 </p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #029cdc; font-weight: bold;">require</span> '<span style="color: #035390;">ido</span>)
+(setq ido-enable-flex-matching t)
+</pre>
+</div>
 </div>
 </div>
 
